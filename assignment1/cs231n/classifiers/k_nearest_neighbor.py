@@ -180,7 +180,9 @@ class KNearestNeighbor(object):
             # label.                                                                #
             #########################################################################
             # *****START OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
-            y_pred[i] = max(closest_y, key=list(closest_y).count)
+            # print(list(closest_y[0]))
+            # print(closest_y[0])
+            y_pred[i] = max(closest_y[0], key=list(closest_y[0]).count)
             pass
 
             # *****END OF YOUR CODE (DO NOT DELETE/MODIFY THIS LINE)*****
